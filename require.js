@@ -1,6 +1,6 @@
 
 function getUrlByName(name){
-  if(globalThis.XMLHttpRequest()){
+  if(globalThis.XMLHttpRequest){
     const xhr = new XMLHttpRequest();
     xhr.open('GET', `https://commonjs.jsx-bet.workers.dev/${name}`, false);
     xhr.send();
